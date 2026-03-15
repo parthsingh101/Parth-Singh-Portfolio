@@ -3,54 +3,57 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 
+
 const projects = [
   {
-    title: "E-Commerce Experience",
-    description: "A high-performance modern e-commerce storefront with seamless cart interactions and optimized product pages.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Dude Chat",
+    description:
+      "A real-time chatting application with AI-powered message suggestions. Includes friend requests, instant messaging, and a responsive chat interface for seamless communication.",
+    image:
+      "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "Node.js", "Socket.io", "AI API"],
+    liveUrl: "https://dude-chat.vercel.app/login",
+    githubUrl: "https://github.com/parthsingh101/DudeChat",
   },
   {
-    title: "Crypto Dashboard",
-    description: "Real-time cryptocurrency tracking dashboard with interactive charts, dark mode, and live data feeds.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "TypeScript", "Chart.js", "GSAP"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Snap Vault",
+    description:
+      "A collaborative gallery platform where users can share and view images with permission. Features include friend requests, locked folders, AI face detection, and smart image categorization.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "MongoDB", "Node.js", "AI Vision API"],
+    liveUrl: "https://snap-vault-beta.vercel.app/login",
+    githubUrl: "https://github.com/parthsingh101/Snap-Vault",
+  },
+  {
+    title: "Paste App",
+    description:
+      "A lightweight notes management application that allows users to create, edit, copy, and delete notes anytime. Designed with a clean interface for quick productivity.",
+    image:
+      "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "Tailwind CSS", "Local Storage"],
+    liveUrl: "https://paste-app-lac-nu.vercel.app/",
+    githubUrl: "https://github.com/parthsingh101/PasteApp",
+  },
+  {
+    title: "AI Resume Analyzer",
+    description:
+      "An AI-powered resume analyzer that evaluates resumes, provides a resume score, and suggests improvements. Includes an AI chatbot designed to answer questions related to resume building and interview preparation.",
+    image:
+      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800",
+    tech: ["React", "AI API", "Node.js", "Tailwind CSS"],
+    liveUrl: "https://ai-resume-analyzer-sigma-jade.vercel.app/",
+    githubUrl: "https://github.com/parthsingh101/AI-Resume-Analyzer",
   },
   {
     title: "Immersive 3D Portfolio",
-    description: "An experimental webGL portfolio featuring interactive 3D elements and custom shader effects.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-    tech: ["Three.js", "React Three Fiber", "Lenis"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "AI Writing Assistant",
-    description: "A generative AI text editor interface featuring smart autocomplete, tone adjustments, and real-time generation.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
-    tech: ["Next.js", "OpenAI API", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Financial Mobile App",
-    description: "Progressive web app for personal finance management with smooth gesture animations and local-first storage.",
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Social Networking Platform",
-    description: "A full-stack social media application featuring real-time messaging, post feeds, and user profiles.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
-    tech: ["Next.js", "TypeScript", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+    description:
+      "An experimental portfolio website featuring interactive 3D elements, smooth animations, and modern UI built using WebGL technologies.",
+    image:
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+    tech: ["Three.js", "React Three Fiber", "Lenis", "Framer Motion"],
+    liveUrl: "https://parth-singh-portfolio-tau.vercel.app/",
+    githubUrl: "https://github.com/parthsingh101/Parth-Singh-Portfolio",
   },
 ];
 
@@ -96,7 +99,7 @@ export function Projects() {
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-3 tracking-tight">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">{project.description}</p>
-                
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, tIndex) => (

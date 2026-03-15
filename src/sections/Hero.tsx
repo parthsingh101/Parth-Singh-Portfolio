@@ -43,11 +43,21 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
           >
-<div className="text-lg pl-2">
-  <h1>Hi, I'm <b className="">Parth Singh</b></h1>
-  <p className="w-lg">Frontend developer focused on building modern, responsive, and interactive web experiences.</p>
-  <p><b>React | Next.js | Modern UI</b></p>
-</div>
+            <div className="text-lg pl-2">
+              <h1>
+                Hi, I'm <b className="text-white">Parth Singh</b>
+              </h1>
+              <p className="w-lg pb-4">
+                Frontend developer focused on building modern, responsive, and
+                user-friendly web applications with clean UI and
+                high-performance experiences.
+              </p>
+              <p>
+                <b className="text-white">
+                  React | Next.js | Javascript | TypeScript | Tailwind | Node.js
+                </b>
+              </p>
+            </div>
           </motion.p>
 
           <motion.div
@@ -61,7 +71,10 @@ export function Hero() {
               className="group flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background font-medium hover:scale-105 transition-transform duration-300"
             >
               View Projects
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={18}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </a>
             <a
               href="/res.pdf"
