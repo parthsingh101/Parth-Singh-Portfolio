@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { SmoothScroll } from "@/components/SmoothScroll";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,7 +22,14 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
+  title: "Frontend Developer Portfolio",
+  description: "High-end interactive developer portfolio",
   title: "Frontend Developer Portfolio",
   description: "High-end interactive developer portfolio",
 };
@@ -31,7 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
+        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground font-sans`}
         className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground font-sans`}
       >
         <ThemeProvider
