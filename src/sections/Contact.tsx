@@ -112,12 +112,12 @@ export function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer pt-6 pb-2"
+                  className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="name"
-                  className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text whitespace-nowrap"
                 >
                   Your Name
                 </label>
@@ -128,12 +128,12 @@ export function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer pt-6 pb-2"
+                  className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text whitespace-nowrap"
                 >
                   Your Email
                 </label>
@@ -146,12 +146,12 @@ export function Contact() {
                 name="message"
                 required
                 rows={5}
-                className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer pt-8 pb-4 resize-none"
+                className="w-full bg-background/50 border border-border/80 rounded-2xl px-4 py-6 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground transition-all peer resize-none"
                 placeholder=" "
               ></textarea>
               <label
                 htmlFor="message"
-                className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
+                className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text whitespace-nowrap"
               >
                 Your Message
               </label>
