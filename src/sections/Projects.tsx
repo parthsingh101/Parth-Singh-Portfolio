@@ -31,6 +31,15 @@ const projects = [
     liveUrl: "https://ai-resume-analyzer-sigma-jade.vercel.app/",
     githubUrl: "https://github.com/parthsingh101/AI-Resume-Analyzer",
   },
+  {
+  title: "Paste App",
+  description:
+    "A full-stack paste and note management web application that allows users to quickly save, view, edit, delete, and copy text snippets or notes. Built with Next.js, JavaScript, and MongoDB, it provides a simple and efficient way to manage reusable content, ideas, links, or code snippets with persistent storage and a clean user-friendly interface.",
+  image: "/PasteApp.png",
+  tech: ["Next.js", "JavaScript", "MongoDB", "Tailwind CSS"],
+  liveUrl: "https://paste-app-lac-nu.vercel.app/pastes",
+  githubUrl: "https://github.com/parthsingh101/PasteApp",
+},
 ];
 
 export function Projects() {
