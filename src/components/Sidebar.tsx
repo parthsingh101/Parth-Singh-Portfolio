@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com/parthsingh101" },
   { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/parth-singh-257464230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-  { name: "Instagram", icon: Instagram, href: "https://twitter.com" },
-  { name: "Email", icon: Mail, href: "mailto:parth020918@gmail.com" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/parth._.101?igsh=MTAzYTdnaXUzeGZpMA=="  },
+  { name: "Email", icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=parth020918@gmail.com" },
 ];
 
 export function Sidebar() {
