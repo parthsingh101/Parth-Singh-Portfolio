@@ -35,7 +35,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 relative">
+    <section id="projects" className="py-18 relative">
       <div className="container px-6 lg:px-20 xl:px-10 mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

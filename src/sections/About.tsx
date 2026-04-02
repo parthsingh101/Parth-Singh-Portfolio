@@ -5,7 +5,7 @@ import { Download, Github } from "lucide-react";
 
 export function About() {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-18 relative">
       <div className="container px-6 lg:px-20 xl:px-10 mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -118,7 +118,7 @@ export function Interactive3D() {
   return (
     <section
       id="interactive-3d"
-      className="relative h-[100vh] w-full bg-background overflow-hidden"
+      className="bg-red-500 relative h-[100vh] w-full bg-background overflow-hidden"
     >
       <div className="sticky top-0 h-screen w-full flex items-center justify-center">
         {/* Text Overlay */}

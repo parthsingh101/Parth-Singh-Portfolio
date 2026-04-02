@@ -52,7 +52,7 @@ const itemVariants = {
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 relative bg-muted/30">
+    <section id="skills" className="py-18 relative bg-muted/30">
       <div className="container px-6 lg:px-20 xl:px-10 mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
