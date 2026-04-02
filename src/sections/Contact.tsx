@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Loader2, CheckCircle2, XCircle } from "lucide-react";
 
 export function Contact() {
+  const [errorMessage, setErrorMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -12,6 +13,7 @@ export function Contact() {
     e.preventDefault();
     setLoading(true);
     setStatus("idle");
+    setErrorMessage("");
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -28,14 +30,18 @@ export function Contact() {
         body: JSON.stringify(data),
       });
 
+      const result = await res.json();
+
       if (res.ok) {
         setStatus("success");
         form.reset();
       } else {
         setStatus("error");
+        setErrorMessage(result.error || result.details || "Failed to send message.");
       }
-    } catch (error) {
+    } catch (error: any) {
       setStatus("error");
+      setErrorMessage(error.message || "An unexpected error occurred.");
     } finally {
       setLoading(false);
     }
@@ -181,9 +187,12 @@ export function Contact() {
             {status === "error" && (
               <motion.p 
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-                className="text-red-500 font-medium flex items-center gap-2"
+                className="text-red-500 font-medium flex flex-col gap-1"
               >
-                <XCircle size={18} /> Failed to send message. Please try again later.
+                <div className="flex items-center gap-2">
+                  <XCircle size={18} /> Failed to send message.
+                </div>
+                {errorMessage && <span className="text-sm opacity-80 ml-7">{errorMessage}</span>}
               </motion.p>
             )}
           </motion.form>
