@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className=" relative h-180  flex items-center justify-center pt-5 overflow-hidden"
+      className=" relative h-220  flex items-center justify-center pt-5 overflow-hidden"
     >
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
