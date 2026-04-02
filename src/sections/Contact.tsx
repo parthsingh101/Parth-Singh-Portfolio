@@ -117,7 +117,7 @@ export function Contact() {
                 />
                 <label
                   htmlFor="name"
-                  className="absolute left-4 top-4 text-muted-foreground text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs font-medium cursor-text"
+                  className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
                 >
                   Your Name
                 </label>
@@ -133,7 +133,7 @@ export function Contact() {
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-4 top-4 text-muted-foreground text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs font-medium cursor-text"
+                  className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
                 >
                   Your Email
                 </label>
@@ -151,7 +151,7 @@ export function Contact() {
               ></textarea>
               <label
                 htmlFor="message"
-                className="absolute left-4 top-4 text-muted-foreground text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs font-medium cursor-text"
+                className="absolute left-4 top-4 text-muted-foreground transition-all peer-placeholder-shown:opacity-100 peer-focus:opacity-0 peer-[:not(:placeholder-shown)]:opacity-0 pointer-events-none cursor-text"
               >
                 Your Message
               </label>
